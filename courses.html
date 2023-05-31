@@ -6,6 +6,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Our Courses</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .course-list {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .course {
+      background-color: #f2f2f2;
+      border-radius: 20px;
+      padding: 10px 20px;
+      margin: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .course:hover {
+      background-color: #c4c4c4;
+    }
+  </style>
 </head>
 
 <body>
@@ -22,16 +41,17 @@
 
   <main>
     <h1>Our Courses</h1>
-    <ul>
-      <li>Business Intelligence</li>
-      <li>SQL Database Development</li>
-      <li>Informatica Cloud</li>
+    <ul class="course-list">
+      <li class="course">Business Intelligence</li>
+      <li class="course">SQL Database Development</li>
+      <li class="course">Informatica Cloud</li>
     </ul>
   </main>
 
   <footer>
     <p>&copy; 2023 Online Database School. All rights reserved.</p>
   </footer>
+  <script src="script.js"></script>
 </body>
 
 </html>

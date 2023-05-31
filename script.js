@@ -1,10 +1,12 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const courses = document.querySelectorAll('.course');
-  
-    courses.forEach(function(course) {
-      course.addEventListener('click', function() {
-        this.classList.toggle('active');
-      });
+  const courseListItems = document.querySelectorAll('.course-list li');
+
+  courseListItems.forEach(function(item) {
+    const courseTitle = item.querySelector('h3');
+    const courseDescription = item.querySelector('p');
+
+    courseTitle.addEventListener('click', function() {
+      item.classList.toggle('active');
     });
   });
-  
+});
